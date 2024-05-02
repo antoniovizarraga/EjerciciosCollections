@@ -9,11 +9,13 @@ public class FrecuenciaLetras {
 
 		String textazo = "En un agujero en el suelo, vivía un hobbit. No un agujero húmedo, sucio, repugnante, con restos de gusanos y olor a fango, ni tampoco un agujero, seco, desnudo y arenoso, sin nada en que sentarse o que comer: era un agujero-hobbit, y eso significa comodidad";
 
+		String textoCopia = textazo.toUpperCase();
+		
 		for (char ch = 'A'; ch <= 'Z'; ++ch) {
 			abecedario.put(ch, 0);
 		}
 
-		for (char ch : textazo.toCharArray()) {
+		for (char ch : textoCopia.toCharArray()) {
 			for(char i : abecedario.keySet()) {
 				if(i == ch) {
 					abecedario.put(i, abecedario.getOrDefault(i, 0) + 1);
