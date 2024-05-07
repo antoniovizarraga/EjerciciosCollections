@@ -24,6 +24,8 @@ public class ListaNombres {
 		Collections.reverse(lista);
 		
 		System.out.println(lista);
+		
+		GetValue.SCANNER.close();
 	}
 
 }
